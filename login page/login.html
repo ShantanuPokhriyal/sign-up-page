@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="login.css"> <!-- Path is correct -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div class="login-box">
+            <div class="logo-container">
+                <img src="../images/logo.jpg" alt="App Logo" class="logo"> <!-- Path is correct -->
+            </div>
+            <form id="login-form">
+                <label for="username"></label>
+                <input type="text" id="username" name="username" placeholder="Enter your username" required>
+                
+                <label for="password"></label>
+                <input type="password" id="password" name="password" placeholder="Enter your password" required>
+                
+                <button type="submit">Login</button>
+                <div id="message"></div>
+            </form>
+        </div>
+    </div>
+    <script src="login.js"></script> <!-- Path is correct -->
+</body>
+</html>

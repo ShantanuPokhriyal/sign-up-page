@@ -1,0 +1,108 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', Arial, sans-serif;
+    background: url('../images/background.jpg') no-repeat center center fixed;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.login-box {
+    background: rgba(0, 0, 0, 0.8); /* Darker background */
+    border-radius: 50%; /* Make the box circular */
+    padding: 20px;
+    width: 520px; /* Adjust width */
+    height: 520px; /* Adjust height to maintain circle shape */
+    box-shadow: 0 0 15px rgba(255, 0, 127, 0.8); /* Pink glow */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; /* Center content vertically */
+    overflow: hidden; /* Hide overflow to maintain circle shape */
+    transition: box-shadow 0.3s ease;
+    margin-left: -29px;
+    margin-top: 29px;
+}
+
+.login-box:hover {
+    box-shadow: 0 0 25px rgba(255, 0, 127, 1); /* Stronger pink glow on hover */
+}
+
+.logo-container {
+    width: 150px; /* Adjust as needed */
+    height: 150px; /* Adjust as needed */
+    background: #000; /* Circle background */
+    border-radius: 50%; /* Make it a circle */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+    box-shadow: 0 0 10px rgba(255, 0, 127, 1); /* Pink glow for the logo */
+}
+
+.logo {
+    width: 120px; /* Adjust as needed */
+    height: 120px; /* Adjust as needed */
+    border-radius: 50%; /* Make the logo itself a circle */
+}
+
+label {
+    display: block;
+    margin: 10px 0 5px;
+    color: #ffffff;
+    text-align: center; /* Center labels */
+    font-size: 14px; /* Slightly smaller font size */
+}
+
+input {
+    width: 90%; /* Ensure inputs fit well within the box */
+    padding: 10px; /* Slightly smaller padding */
+    margin-bottom: 10px; /* Reduced margin for a shorter box */
+    border: 2px solid #ff007f;
+    border-radius: 5px;
+    background: #333; /* Darker input background */
+    color: #ffffff;
+    outline: none;
+    font-size: 14px; /* Slightly smaller font size */
+    font-family: 'Roboto', Arial, sans-serif;
+    text-align: center; /* Center the placeholder and text inside the input field */
+    transition: border 0.3s ease, box-shadow 0.3s ease;
+}
+
+input::placeholder {
+    text-align: center; /* Center the placeholder text */
+}
+
+input:focus {
+    border-color: #ff007f;
+    box-shadow: 0 0 8px rgba(255, 0, 127, 0.5);
+}
+
+button {
+    width: 50%; /* Ensure button fits well within the box */
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background: #ff007f;
+    color: #ffffff;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    margin-left: 90px;
+    margin-top: 20px;
+
+}
+
+button:hover {
+    background: #e60074;
+}
